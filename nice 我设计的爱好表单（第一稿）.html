@@ -1,0 +1,63 @@
+<form action="https://gitee.com/xinweitao/my-html-practice" method="get">
+	<!-- label标签定义表单控件的文字标注
+         input类型为其定义了一个单行文本输入框 -->
+	<p>
+		<label>昵称：</label>
+		<input style="background-color:#ACFA58" type="text" name="name" />
+	</p>
+	<font size="4" color=#FE642E><b>请输入您的姓名、手机号和密码哦~</b></font>
+	
+	<ul>
+		<li class="name bgImg">
+			<input type="text" style="background-color:#ACFA58" id="name" maxlength="10" placeholder="姓名"/>
+		</li>
+		<li class="phone bgImg">
+			<input type="text" style="background-color:#ACFA58" id="phone" maxlength="11" placeholder="手机号"/>
+		</li>
+		<li class="password bgImg">
+			<input type="password" style="background-color:#ACFA58" id="password" maxlength="10" placeholder="6-10位数字&字母组合登录密码"/>
+			<a href="#" id="passwordeye" class="invisible bgImg"></a>
+		</li>
+	</ul>
+	
+	<!-- input类型为其定义了 单选框  -->
+	<p>
+		<label>性别：</label>
+		<label><input type="radio" name="gender" value="0" /> 男</label>
+		<label><input type="radio" name="gender" value="1" /> 女</label>
+	</p>
+	<p>
+		<label>爱好：</label>
+		<label><input type="checkbox" name="like" value="fitness" /> 健身</label>
+		<label><input type="checkbox" name="like" value="run" /> 跑步</label>
+		<label><input type="checkbox" name="like" value="badminton" /> 打羽毛球</label>
+		<label><input type="checkbox" name="like" value="ping-pong" /> 打乒乓球</label>
+		<label><input type="checkbox" name="like" value="basketball" /> 打篮球</label>
+	</p>
+	<!-- input类型为file定义上传照片或文件等资源 -->
+	<p>
+		<label>照片：</label>
+		<input type="file" name="person_pic">
+	</p>
+	<!-- textarea定义多行文本输入 可自由拖动 -->
+	<p>
+		<label>个人描述：</label>
+		<textarea name="about"></textarea>
+	</p>
+	<!-- select定义下拉列表选择 -->
+	<p>
+		<label>籍贯：</label>
+		<select name="site">
+			<option value="0">厦门</option>
+			<option value="1">北京</option>
+			<option value="2">上海</option>
+			<option value="3">福州</option>
+		</select>
+	</p>
+	<!-- input类型为submit定义提交按钮 -->
+	<p>
+		<input type="submit" name="" value="提交">
+		<!-- input类型为reset定义重置按钮 -->
+		<input type="reset" name="" value="重置">
+	</p>
+</form>
